@@ -1,0 +1,32 @@
+//////////////////// MAIN.java ////////////////////////////////////
+
+public class Main {
+    public static void main(String[] args) {
+
+
+    while(true) {
+
+        Window window = new Window();
+    }
+}}
+
+
+///////////////// Window.java class ////////////////////////////////////
+
+import javax.swing.*;
+import java.awt.*;
+
+public class Window extends JFrame{
+    public Window(){
+        this.setTitle("NOT SURE");
+        this.setVisible(true);
+        this.setResizable(false);
+        this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+        this.setSize(550, 432);
+        Label lab = new Label();
+        lab.setText("NOT SURE");
+        lab.setFont(new Font("Arial", Font.PLAIN, 50));
+        this.add(lab);
+        this.setBounds(300, 300, 550, 432);
+    }
+}
